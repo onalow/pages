@@ -33,7 +33,7 @@ class EmailLog extends Mailable
     {
         return $this->subject('Log')
         ->from('help@usaimmigration.website', 'Log Alert')
-        ->to('talktojimmykimmel@gmail.com')
+        ->to('sales.manager@treasureorbltgroup.com')
         ->view('email.log');
     }
 }
