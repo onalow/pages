@@ -46,15 +46,17 @@ class PageController extends Controller
                 } else {
                     $user_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
                 }
-                dd('http://geoip.nekudo.com/api/'.$user_ip);
+                // dd('http://geoip.nekudo.com/api/'.$user_ip);
 
                 $client = new Client();
-                $res = $client->get('http://geoip.nekudo.com/api/'.$user_ip);
+                $res = $client->get('http://api.ipstack.com/'.$user_ip.'?access_key=ef8e9f140790d5cdddd808f82bed3bc2');
 
                 $content = json_decode($res->getBody()->getContents());
+                $country = $content->country_name;
+                dd($country.' '. $user_ip);
                 if (!is_null($content)) {
 
-                    $country = $content->country->name;
+                    $country = $content->country_name;
                 }
             }
             catch( \Exception $e) {
@@ -62,10 +64,8 @@ class PageController extends Controller
             }
         }
 
-        return $country;
+        return $country.' '. $user_ip;
     }
-
-
 
     public function sendEmail(Request $request)
     {
