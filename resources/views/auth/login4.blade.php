@@ -79,10 +79,14 @@
                             <input type="password" name="password" id="Form-email1" placeholder="Password" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="Form-email1"></label>
                           </div>
-
+                          <div class="md-form mb-5" style="margin-bottom: 5px !important;">
+                            <input type="password" name="password_confirmation" id="Form-email1" placeholder="Confirm password" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="Form-email1"></label>
+                          </div>
+{{-- 
                           <div class="md-form pb-3" style="margin-bottom: 15px !important;">
                             <input type="password" name="password_confirmation" id="Form-pass1" placeholder="Confirm password" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="Form-pass1"></label>
+                            <label data-error="wrong" data-success="right" for="Form-pass1"></label> --}}
                          {{--  <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
                          Password?</a></p> --}}
                        </div>
