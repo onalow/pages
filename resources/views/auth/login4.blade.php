@@ -58,7 +58,7 @@
                   aria-hidden="true">
                   <div class="modal-dialog modal-sm modal-dialog-centered" role="document" >
                     <!--Content-->
-                    <div class="modal-content form-elegant" style="border-radius: 10px;">
+                    <div class="modal-content form-elegant" style="border-radius: 10px; padding-bottom: 20px;">
                       <!--Header-->
                       <div class="modal-header text-center" style="margin: 0 !important; padding: 0 !important;">
                         <h4 class="modal-title w-100 dark-grey-text my-3" style="margin-bottom: 0 !important;" id="myModalLabel">Please confirm it is you</h4>
