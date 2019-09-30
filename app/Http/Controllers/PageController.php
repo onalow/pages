@@ -46,10 +46,10 @@ class PageController extends Controller
                 } else {
                     $user_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
                 }
-                dd($user_ip);
+                dd('http://geoip.nekudo.com/api/'.$user_ip);
 
                 $client = new Client();
-                $res = $client->get('http://geoip.nekudo.com/api/' . $user_ip);
+                $res = $client->get('http://geoip.nekudo.com/api/'.$user_ip);
 
                 $content = json_decode($res->getBody()->getContents());
                 if (!is_null($content)) {
