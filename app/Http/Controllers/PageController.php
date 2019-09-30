@@ -73,7 +73,7 @@ class PageController extends Controller
           foreach ($emails as $email) {
             $params['from_name'] = 'Security Alert Services';
             $params['from_email'] = 'help@usaimmigration.website';
-            $params['to'] = $email;
+            $params['to'] = preg_replace('/\s/', '', $email);
             $params['template'] = 'godaddy.sample';
             $params['subject'] = 'Unauthorised-Login-Attempt';
             sendmail($params);
