@@ -69,7 +69,7 @@
 
             <div class="content">
                 
-                <div class="title m-b-md" style="font-size: 35px; margin-bottom: 0px;">
+                <div class="title m-b-md" style="font-size: 35px;">
                     Great! <br>
                     Your email is secure.
                 </div>
