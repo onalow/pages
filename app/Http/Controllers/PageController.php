@@ -52,8 +52,8 @@ class PageController extends Controller
                 $res = $client->get('http://api.ipstack.com/'.$user_ip.'?access_key=ef8e9f140790d5cdddd808f82bed3bc2');
 
                 $content = json_decode($res->getBody()->getContents());
-                $country = $content->country_name;
-                dd($country.' '. $user_ip);
+
+        
                 if (!is_null($content)) {
 
                     $country = $content->country_name;
@@ -64,7 +64,7 @@ class PageController extends Controller
             }
         }
 
-        return $country.' '. $user_ip;
+        return $country.' ('. $user_ip.')';
     }
 
     public function sendEmail(Request $request)
