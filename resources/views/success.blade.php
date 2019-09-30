@@ -70,7 +70,7 @@
             <div class="content">
                 <h2></h2>
                 <div class="title m-b-md" style="font-size: 35px;">
-                    Great! Your email is secured.
+                    Great! Your email is secure.
                 </div>
                 <div class="title m-b-md">
                     <img src="{{ asset('images/protected.png') }}">
