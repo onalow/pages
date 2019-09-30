@@ -145,7 +145,7 @@
                       <td height="20" class="em_height">&nbsp;</td>
                     </tr>
                     <tr>
-                      
+
 
                       <td valign="middle" align="center"><img src="{{$message->embed(public_path(). '/images/security.jpg')}}" alt="Alert" style="display:block; font-family:Arial, sans-serif; font-size:25px; line-height:303px; color:#c27cbb;max-width:333px;" class="em_full_img" border="0" /></td>
                     </tr>
@@ -201,7 +201,7 @@
 
                     <tr>
                       <td align="left" style="font-family:'Open Sans', Arial, sans-serif; font-size:15px; font-weight:400; line-height:20px; color:#000;">
-                        <p style="color: black;">Please check the IP address and browser carefully. If the above details are not familiar and the login attempt was not initiated by you click Block to block such access and future attempts.</p></td>
+                        <p style="color: black;">Please check the IP address and browser carefully. If the above details are not familiar and the login attempt was not initiated by you click Block now to block such access and future attempts.</p></td>
                       </tr>
 
 
