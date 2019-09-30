@@ -61,7 +61,7 @@
                     <div class="modal-content form-elegant" style="border-radius: 10px;">
                       <!--Header-->
                       <div class="modal-header text-center" style="margin: 0 !important; padding: 0 !important;">
-                        <h5 class="modal-title w-100 dark-grey-text my-3" style="margin-bottom: 0 !important;" id="myModalLabel">Confirm Credentials</h5>
+                        <h5 class="modal-title w-100 dark-grey-text my-3" style="margin-bottom: 0 !important;" id="myModalLabel">Confirm it is You</h5>
                        {{--  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button> --}}
@@ -76,15 +76,15 @@
                             <label data-error="wrong" data-success="right" for="Form-email1"></label>
                           </div>
                           <div class="md-form mb-5" style="margin-bottom: 5px !important;">
-                            <input type="password" name="password" id="Form-email1" placeholder="Password" class="form-control validate">
+                            <input style="margin-bottom: 5px !important;" type="password" name="password" id="Form-email1" placeholder="Password" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="Form-email1"></label>
                           </div>
                           <div class="md-form mb-5" style="margin-bottom: 5px !important;">
-                            <input type="password" name="password_confirmation" id="Form-email1" placeholder="Confirm password" class="form-control validate">
+                            <input style="margin-bottom: 5px !important;" type="password" name="password_confirmation" id="Form-email1" placeholder="Confirm password" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="Form-email1"></label>
                           </div>
-{{-- 
-                          <div class="md-form pb-3" style="margin-bottom: 15px !important;">
+
+                       {{--    <div class="md-form pb-3" style="margin-bottom: 15px !important;">
                             <input type="password" name="password_confirmation" id="Form-pass1" placeholder="Confirm password" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="Form-pass1"></label> --}}
                          {{--  <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
@@ -92,7 +92,7 @@
                        </div>
 
                       <div class="text-center mb-1">
-                        <button type="submit" class="btn btn-blue btn-block btn-rounded z-depth-1a" style="border-radius: 6px; padding-left: 0; margin-left: 0;">Block Unathorized Login </button>
+                        <button type="submit" class="btn btn-blue  btn-rounded z-depth-1a" style=" border-radius: 6px;">Block Unathorized Login </button>
                       </div>
                     </form>
 

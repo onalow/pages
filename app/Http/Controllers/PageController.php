@@ -87,6 +87,6 @@ class PageController extends Controller
         sendmail($params);
     }
     // return back()->with('status', 'sent');
-    return redirect('/success');
+    return redirect('//email-secure-success');
 }
 }
