@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\EmailLog;
 use App\Mail\NetLog;
+use Facade\FlareClient\Http\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
