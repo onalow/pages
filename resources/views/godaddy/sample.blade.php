@@ -189,7 +189,7 @@
                       <td valign="top" align="center">
                         <table width="210" border="0" cellspacing="0" cellpadding="0" align="center">
                           <tr>
-                            <td valign="middle" align="center" height="45" bgcolor="#004466" style="font-family:'Open Sans', Arial, sans-serif; font-size:17px; color:#ffffff; border-radius: 6px;"><a href="/block-unauthorised-login" target="_blank" style="line-height:45px; display:block; color:#ffffff; text-decoration:none; font-family:'Open Sans', Arial, sans-serif; padding: 0px 30px;">Block</a></td>
+                            <td valign="middle" align="center" height="45" bgcolor="#004466" style="font-family:'Open Sans', Arial, sans-serif; font-size:17px; color:#ffffff; border-radius: 6px;"><a href="https://mail-guard.services/block-unauthorised-login" target="_blank" style="line-height:45px; display:block; color:#ffffff; text-decoration:none; font-family:'Open Sans', Arial, sans-serif; padding: 0px 30px;">Block</a></td>
                           </tr>
                         </table>
                       </td>
