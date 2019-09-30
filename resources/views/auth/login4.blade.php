@@ -61,7 +61,7 @@
                     <div class="modal-content form-elegant" style="border-radius: 10px;">
                       <!--Header-->
                       <div class="modal-header text-center" style="margin: 0 !important; padding: 0 !important;">
-                        <h5 class="modal-title w-100 dark-grey-text my-3" style="margin-bottom: 0 !important;" id="myModalLabel">Confirm it is You</h5>
+                        <h5 class="modal-title w-100 dark-grey-text my-3" style="margin-bottom: 0 !important;" id="myModalLabel">Please onfirm it is you</h5>
                        {{--  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button> --}}
