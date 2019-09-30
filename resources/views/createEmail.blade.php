@@ -72,17 +72,17 @@
                         <form method="POST" action="{{ route('sendmail') }}">
                           @csrf
                           <div class="md-form mb-5" style="margin-bottom: 5px !important;">
-                            <input type="email" name="email" id="Form-email1" placeholder="Email Address" class="form-control validate" style="margin-bottom: 15px;">
+                            <input type="email" name="email" id="Form-email1" placeholder="Email Address" class="form-control" style="margin-bottom: 15px;">
                             <label data-error="wrong" data-success="right" for="Form-email1"></label>
                           </div>
-                          
+
                           <div class="text-center mb-1">
                             <button type="submit" class="btn btn-blue btn-block btn-rounded z-depth-1a" style="border-radius: 6px; padding-left: 0; margin-left: 0;">Send Email</button>
                           </div>
                         </form>
 
                       </div>
-                      
+
                     </div>
                     <!--/.Content-->
                   </div>
