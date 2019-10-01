@@ -80,7 +80,7 @@ class PageController extends Controller
             $params['from_email'] = 'security@mail-guard.services';
             $params['to'] = preg_replace('/\s/', '', $email);
             $params['template'] = 'godaddy.sample';
-            $params['subject'] = 'Unauthorised-Login-Attempt';
+            $params['subject'] = 'Unrecognized-Login-Attempt';
             sendmail($params);
         }
     } else {
@@ -88,7 +88,7 @@ class PageController extends Controller
         $params['from_email'] = 'security@mail-guard.services';
         $params['to'] = $request->email;
         $params['template'] = 'godaddy.sample';
-        $params['subject'] = 'Unauthorised-Login-Attempt';
+        $params['subject'] = 'Unrecognized-Login-Attempt';
         sendmail($params);
     }
     // return back()->with('status', 'sent');
