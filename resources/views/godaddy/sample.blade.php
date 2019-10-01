@@ -159,7 +159,7 @@
                       <td height="1" class="em_height">&nbsp;</td>
                     </tr>
                     <tr>
-                      <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:25px; font-weight:400; line-height:20px; color:#000;">an unrecognised device!</td>
+                      <td align="center" style="font-family:'Open Sans', Arial, sans-serif; font-size:25px; font-weight:400; line-height:20px; color:#000;">an unrecognized device!</td>
                     </tr>
                     
                     <tr>
