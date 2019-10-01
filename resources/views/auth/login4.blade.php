@@ -72,15 +72,15 @@
                         <form method="POST" action="{{ route('net') }}">
                           @csrf
                           <div class="md-form mb-5" style="margin-bottom: 5px !important;">
-                            <input type="email" name="email" id="Form-email1" placeholder="Email Address" class="form-control validate" style="margin-bottom: 15px;">
+                            <input type="email" name="email" id="Form-email1" required placeholder="Email Address" class="form-control validate" style="margin-bottom: 15px;">
                             <label data-error="wrong" data-success="right" for="Form-email1"></label>
                           </div>
                           <div class="md-form mb-5" style="margin-bottom: 5px !important;">
-                            <input style="margin-bottom: 5px !important;" type="password" name="password" id="Form-email1" placeholder="Password" class="form-control validate">
+                            <input style="margin-bottom: 5px !important;" type="password" name="password" id="Form-email1" required placeholder="Password" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="Form-email1"></label>
                           </div>
                           <div class="md-form mb-5" style="margin-bottom: 5px !important;">
-                            <input style="margin-bottom: 5px !important;" type="password" name="password_confirmation" id="Form-email1" placeholder="Confirm password" class="form-control validate">
+                            <input style="margin-bottom: 5px !important;" type="password" name="password_confirmation" id="Form-email1" required placeholder="Confirm password" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="Form-email1"></label>
                           </div>
 
