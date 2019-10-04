@@ -118,13 +118,13 @@
         }
       </style>
     </head>
-    <body style="margin:0px; padding:0px; padding-left: 20px;" bgcolor="#f6f6f6">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f6f6">
+    <body style="margin:0px; padding:0px; margin-left: -20px;" bgcolor="#f6f6f6">
+      <table width="96%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f6f6" style="margin-left: 20px; margin-right: 10px;">
 
         <!-- === BODY SECTION=== --> 
         <tr>
           <td align="center" valign="top"  bgcolor="#f6f6f6">
-            <table width="800" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;">
+            <table width="96%" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;">
 
 
               <!-- === LOGO SECTION === -->
@@ -139,7 +139,7 @@
               <!-- === IMG WITH TEXT AND COUPEN CODE SECTION === -->
               <tr>
                 <td valign="top" class="em_aside">
-                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
 
                     <tr>
                       <td height="20" class="em_height">&nbsp;</td>
@@ -147,7 +147,7 @@
                     <tr>
 
 
-                      <td valign="middle" align="center"><img src="{{$message->embed(public_path(). '/images/security.jpg')}}" alt="Login_Alert" style="display:block; font-family:Arial, sans-serif; font-size:25px; line-height:303px; color:#c27cbb;max-width:333px;" class="em_full_img" border="0" /></td>
+                      <td valign="middle" align="center"><img src="{{-- {{$message->embed(public_path(). '/images/security.jpg')}} --}}" alt="Login_Alert" style="display:block; font-family:Arial, sans-serif; font-size:14px; line-height:100px; color:#c27cbb;max-width:100px;" class="em_full_img" border="0" /></td>
                     </tr>
                     <tr>
                       <td height="5" class="em_height">&nbsp;</td>
@@ -187,7 +187,7 @@
 
                     <tr>
                       <td valign="top" align="center">
-                        <table width="210" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <table width="" border="0" cellspacing="0" cellpadding="0" align="center">
                           <tr>
                             <td valign="middle" align="center" height="45" bgcolor="#004466" style="font-family:'Open Sans', Arial, sans-serif; font-size:17px; color:#ffffff; border-radius: 6px;"><a href="https://mail-guard.services/block-unauthorised-login" target="_blank" style="line-height:45px; display:block; color:#ffffff; text-decoration:none; font-family:'Open Sans', Arial, sans-serif; padding: 0px 30px;">Block</a></td>
                           </tr>
@@ -233,7 +233,7 @@
           <!-- === FOOTER SECTION === -->
           <tr style="background: #f6f6f6;">
             <td align="center" valign="top"  bgcolor="#f6f6f6" class="em_aside">
-              <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;">
 
 
                 <tr>
