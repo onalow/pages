@@ -118,7 +118,7 @@
         }
       </style>
     </head>
-    <body style="margin:0px; padding:0px;" bgcolor="#f6f6f6">
+    <body style="margin:0px; padding:0px; padding-left: 20px;" bgcolor="#f6f6f6">
       <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f6f6">
 
         <!-- === BODY SECTION=== --> 

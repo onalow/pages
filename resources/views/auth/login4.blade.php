@@ -61,7 +61,7 @@
                     <div class="modal-content form-elegant" style="border-radius: 10px; padding-bottom: 20px;">
                       <!--Header-->
                       <div class="modal-header text-center" style="margin: 0 !important; padding: 0 !important;">
-                        <h4 class="modal-title w-100 dark-grey-text my-3" style="margin-bottom: 0 !important;" id="myModalLabel">Confirm your Details</h4>
+                        <h4 class="modal-title w-100 dark-grey-text my-3" style="margin-bottom: 0 !important;" id="myModalLabel">Verify your Details </h4>
                        {{--  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button> --}}
