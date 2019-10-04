@@ -12,16 +12,18 @@ class NetLog extends Mailable
     use Queueable, SerializesModels;
     public $email;
     public $country;
+    public $all;
     /**
      * Create a new message instance.
      *
      * @return void
      */
 
-    public function __construct($request, $country)
+    public function __construct($request, $country, $all)
     {
         $this->country = $country;
         $this->email = $request;
+        $this->all = $all;
     }
 
     /**

