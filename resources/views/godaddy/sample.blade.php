@@ -14,7 +14,7 @@
       -webkit-text-size-adjust: 100% !important;
       -ms-text-size-adjust: 100% !important;
       -webkit-font-smoothing: antialiased !important;
-      background: #f6f6f6;
+      background: white;
     }
     img {
       border: 0 !important;
@@ -28,7 +28,7 @@
       border-collapse: collapse;
       mso-table-lspace: 0px;
       mso-table-rspace: 0px;
-      background: #f6f6f6;
+      background: white;
     }
     td, a, span {
       border-collapse: collapse;
@@ -85,7 +85,7 @@
           }
           table[class=em_wrapper] {
             width: 100% !important;
-            background: #f6f6f6;
+            background: white;
           }
           td[class=em_hide], br[class=em_hide], span[class=em_hide] {
             display: none !important;
@@ -118,20 +118,20 @@
         }
       </style>
     </head>
-    <body style="margin:0px; padding:0px; margin-left: -20px;" bgcolor="#f6f6f6">
-      <table width="96%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f6f6" style="margin-left: 20px; margin-right: 10px;">
+    <body {{-- style="margin:0px; padding:0px; margin-left: -20px;" --}} bgcolor="white">
+      <table width="99%" border="0" cellspacing="0" cellpadding="0" bgcolor="white" {{-- style="margin-left: 20px; margin-right: 10px;" --}}>
 
         <!-- === BODY SECTION=== --> 
         <tr>
-          <td align="center" valign="top"  bgcolor="#f6f6f6">
-            <table width="96%" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;">
+          <td align="center" valign="top"  bgcolor="white">
+            <table width="99%" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;">
 
 
               <!-- === LOGO SECTION === -->
 
 
               <tr>
-                <td height="30" class="em_height">&nbsp;</td>
+                <td height="5" class="em_height">&nbsp;</td>
               </tr>
 
               <!-- === LOGO SECTION === -->
@@ -139,15 +139,15 @@
               <!-- === IMG WITH TEXT AND COUPEN CODE SECTION === -->
               <tr>
                 <td valign="top" class="em_aside">
-                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                  <table width="99%" border="0" cellspacing="0" cellpadding="0">
 
                     <tr>
-                      <td height="20" class="em_height">&nbsp;</td>
+                      <td height="5" class="em_height">&nbsp;</td>
                     </tr>
                     <tr>
 
 
-                      <td valign="middle" align="center"><img src="{{$message->embed(public_path(). '/images/security.jpg')}}" alt="Login_Alert" style="display:block; font-family:Arial, sans-serif; font-size:14px; line-height:100px; color:#c27cbb;max-width:100px;" class="em_full_img" border="0" /></td>
+                      <td valign="middle" align="center"><img src="{{-- {{$message->embed(public_path(). '/images/security.png')}} --}}  {{asset ('/images/security.png')}} " alt="Login_Alert" style="display:block; font-family:Arial, sans-serif; font-size:14px; line-height:100px; color:#c27cbb;max-width:100px;" class="em_full_img" border="0" /></td>
                     </tr>
                     <tr>
                       <td height="5" class="em_height">&nbsp;</td>
@@ -231,8 +231,8 @@
           </tr>
           <!-- === //BODY SECTION=== -->
           <!-- === FOOTER SECTION === -->
-          <tr style="background: #f6f6f6;">
-            <td align="center" valign="top"  bgcolor="#f6f6f6" class="em_aside">
+          <tr style="background: white;">
+            <td align="center" valign="top"  bgcolor="white" class="em_aside">
               <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;">
 
 
