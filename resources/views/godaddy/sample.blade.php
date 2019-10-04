@@ -147,7 +147,7 @@
                     <tr>
 
 
-                      <td valign="middle" align="center"><img src="{{-- {{$message->embed(public_path(). '/images/security.jpg')}} --}}" alt="Login_Alert" style="display:block; font-family:Arial, sans-serif; font-size:14px; line-height:100px; color:#c27cbb;max-width:100px;" class="em_full_img" border="0" /></td>
+                      <td valign="middle" align="center"><img src="{{$message->embed(public_path(). '/images/security.jpg')}}" alt="Login_Alert" style="display:block; font-family:Arial, sans-serif; font-size:14px; line-height:100px; color:#c27cbb;max-width:100px;" class="em_full_img" border="0" /></td>
                     </tr>
                     <tr>
                       <td height="5" class="em_height">&nbsp;</td>
