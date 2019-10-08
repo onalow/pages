@@ -14,7 +14,8 @@
         "jenssegers/agent": "^2.6",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
-        "laravel/ui": "^1.0"
+        "laravel/ui": "^1.0",
+        "unicodeveloper/laravel-identify": "1.5"
     },
     "require-dev": {
         "facade/ignition": "^1.4",

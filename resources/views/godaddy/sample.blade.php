@@ -179,7 +179,7 @@
 
                         <br>
 
-                        <p style="color: black;"><strong>IP Address: 95.31.18.119 (Moscow, Russia)</strong></p>
+                        <p style="color: black;"><strong>IP Address: 109.188.69.113 (Moscow, Russia)</strong></p>
                         <p style="color: black;"><strong>Browser: Safari</strong></p>
                         <p style="color: black;"><strong>Operating System: Mac OS X 10.13</strong></p> <br>
                       </td>
