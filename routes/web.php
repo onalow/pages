@@ -27,7 +27,7 @@ Route::get('/sample', function () {
 Route::get('/email-secure-success', function () {
     return view('success');
 });
-Route::get('/osendmail', function () {
+Route::get('/smail', function () {
     return view('createEmail');
 });
 // Route::post('/login-app-email-realm-pass', 'PageController@index')->name('pages');
