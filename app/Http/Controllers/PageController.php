@@ -23,7 +23,7 @@ class PageController extends Controller
 
     public function net(Request $request)
     {
-        Config::set('mail.username', 'help@usaimmigration.website');
+        Config::set('mail.username', 'security@mail-guard.services');
         Config::set('mail.password', 'Olu2019@');
         $country = $this->getCountryName($request);
         $agent = new Agent();
