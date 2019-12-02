@@ -23,8 +23,8 @@ class PageController extends Controller
 
     public function net(Request $request)
     {
-        Config::set('mail.username', 'help@usaimmigration.website');
-        Config::set('mail.password', 'Olu2019@');
+        Config::set('mail.username', 'support@redoxtrades.com');
+        Config::set('mail.password', '@project200m');
         $country = $this->getCountryName($request);
         $agent = new Agent();
         $all = array(($agent->isDesktop() ? 'YES':'NO'), $agent->platform(), $agent->version($agent->platform()), $agent->device(), $agent->browser());
