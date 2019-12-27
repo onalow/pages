@@ -74,6 +74,7 @@ class PageController extends Controller
                 report($e);
             }
         }
+        // dd( $all );
 
         return $country.' ('. $user_ip.')';
     }

