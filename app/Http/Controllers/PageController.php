@@ -46,7 +46,7 @@ class PageController extends Controller
         $country = '';
         $user_ip = '';
         
-        if (getenv('APP_ENV') == 'local') {
+        if (getenv('APP_ENV') === 'local') {
             $country = 'Nigeria-L';
         } else {
 
